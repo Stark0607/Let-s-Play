@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <br>
+<br>
+    <div class="cont">
+        <div class="form sign-in">
+            <h2 style="color: aliceblue;">Welcome</h2>
+            <label>
+                <span>Email</span>
+                <input type="email" />
+            </label>
+            <label>
+                <span>Password</span>
+                <input type="password" />
+            </label>
+            <p class="forgot-pass">Forgot password?</p>
+            <a href="./index1.html">
+                
+            <button type="button" class="submit">Sign In</button>
+        </a>
+        </div>
+        <div class="sub-cont">
+            <div class="img">
+                <div class="img__text m--up">
+                 
+                    <h3>Don't have an account? </h3>
+                    
+                        <h4>Hail to The SQUADS!!!</h4>
+                        <h4>please Sign UP!!</h4>
+                </div>
+                <div class="img__text m--in">
+                
+                    <h3>If you are already in SQUADS, just sign in.<h3>
+                </div>
+                <div class="img__btn">
+                    <span class="m--up">Sign Up</span>
+                    <span class="m--in">Sign In</span>
+                </div>
+            </div>
+            <div class="form sign-up">
+                <h2 style="color: aliceblue;">Create your Account</h2>
+                <label>
+                    <span>Name</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>address</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Pincode</span>
+                    <input type="text" />
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input type="email" />
+                </label>
+                <label>
+                    <span>Password</span>
+                    <input type="password" />
+                </label>
+                <a href="./index1.html">
+
+                <button type="button" class="submit">Sign Up</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.img__btn').addEventListener('click', function() {
+            document.querySelector('.cont').classList.toggle('s--signup');
+        });
+    </script>
+</body>
+</html>
